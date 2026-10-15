@@ -27,7 +27,7 @@ HOW TO RUN
     -php artisan serve
 10. Use the API base URL
     -http://127.0.0.1:8000
-<br>
+
 API ROUTES
 | Method | Endpoint | Description | Token Required? |
 |---|---|---|---|
