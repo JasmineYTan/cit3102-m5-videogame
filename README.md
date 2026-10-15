@@ -1,8 +1,8 @@
-PROJECT INFORMATION
-Project Title: Video Games API (Midterm Activity 2)
-Names: Kirsten Khurt Reboredo, Jasmine Nicole Tan
-Section: IT3E
-Resource: Video Games
+PROJECT INFORMATION<br>
+Project Title: Video Games API (Midterm Activity 2)<br>
+Names: Kirsten Khurt Reboredo, Jasmine Nicole Tan<br>
+Section: IT3E<br>
+Resource: Video Games<br>
 
 HOW TO RUN
 1. Make sure you have the following requirements:
@@ -27,7 +27,7 @@ HOW TO RUN
     -php artisan serve
 10. Use the API base URL
     -http://127.0.0.1:8000
-
+<br>
 API ROUTES
 | Method | Endpoint | Description | Token Required? |
 |---|---|---|---|
@@ -42,8 +42,8 @@ API ROUTES
 | PUT | `{{baseURL}}/video-games/1` | Update a video game | Yes |
 | DELETE | `{{baseURL}}/video-games/1` | Delete a video game | Yes |
 
-WHY DOES DELETE RETURN A 204 INSTEAD OF A 200?
-Jasmine Tan: A 204 No Content status code means that a request was successful, but there is no data/body to return. It tells the user that the request worked without sending any extra information. This is useful to know if the data was successfully deleted because there is no need to return the deleted content. Unlike a 200 OK response, a 204 response does not include a response body, helping to save data by avoiding unnecessary information. It makes it useful when the server only needs to confirm that an operation was successful.
+WHY DOES DELETE RETURN A 204 INSTEAD OF A 200?<br>
+Jasmine Tan: A 204 No Content status code means that a request was successful, but there is no data/body to return. It tells the user that the request worked without sending any extra information. This is useful to know if the data was successfully deleted because there is no need to return the deleted content. Unlike a 200 OK response, a 204 response does not include a response body, helping to save data by avoiding unnecessary information. It makes it useful when the server only needs to confirm that an operation was successful.<br>
 
 Khurt Reboredo: 
 DELETE returns 204 because the server successfully deletes the requested record and has no content to send back. The 204 status tells you the operation succeeded without a response body. A 200 status usually means the server succeeded and returned a response, such as a message or data. Using 204 keeps the response simple when you only need to confirm the deletion.
