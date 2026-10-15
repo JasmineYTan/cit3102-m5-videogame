@@ -1,4 +1,4 @@
-PROJECT INFORMATION<br>
+**PROJECT INFORMATION**<br>
 Project Title: Video Games API (Midterm Activity 2)<br>
 Names: Kirsten Khurt Reboredo, Jasmine Nicole Tan<br>
 Section: IT3E<br>
