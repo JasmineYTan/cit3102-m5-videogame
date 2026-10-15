@@ -4,7 +4,7 @@ Names: Kirsten Khurt Reboredo, Jasmine Nicole Tan<br>
 Section: IT3E<br>
 Resource: Video Games<br>
 
-HOW TO RUN
+**HOW TO RUN**
 1. Make sure you have the following requirements:
     -PHP
     -Composer
@@ -28,7 +28,7 @@ HOW TO RUN
 10. Use the API base URL
     -http://127.0.0.1:8000
 
-API ROUTES
+**API ROUTES**
 | Method | Endpoint | Description | Token Required? |
 |---|---|---|---|
 | POST | `{{baseURL}}/register` | Register a user | No |
@@ -42,7 +42,7 @@ API ROUTES
 | PUT | `{{baseURL}}/video-games/1` | Update a video game | Yes |
 | DELETE | `{{baseURL}}/video-games/1` | Delete a video game | Yes |
 
-WHY DOES DELETE RETURN A 204 INSTEAD OF A 200?<br>
+**WHY DOES DELETE RETURN A 204 INSTEAD OF A 200?**<br>
 Jasmine Tan: A 204 No Content status code means that a request was successful, but there is no data/body to return. It tells the user that the request worked without sending any extra information. This is useful to know if the data was successfully deleted because there is no need to return the deleted content. Unlike a 200 OK response, a 204 response does not include a response body, helping to save data by avoiding unnecessary information. It makes it useful when the server only needs to confirm that an operation was successful.<br>
 
 Khurt Reboredo: 
