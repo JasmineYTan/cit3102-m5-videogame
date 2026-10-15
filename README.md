@@ -46,3 +46,4 @@ WHY DOES DELETE RETURN A 204 INSTEAD OF A 200?
 Jasmine Tan: A 204 No Content status code means that a request was successful, but there is no data/body to return. It tells the user that the request worked without sending any extra information. This is useful to know if the data was successfully deleted because there is no need to return the deleted content. Unlike a 200 OK response, a 204 response does not include a response body, helping to save data by avoiding unnecessary information. It makes it useful when the server only needs to confirm that an operation was successful.
 
 Khurt Reboredo: 
+DELETE returns 204 because the server successfully deletes the requested record and has no content to send back. The 204 status tells you the operation succeeded without a response body. A 200 status usually means the server succeeded and returned a response, such as a message or data. Using 204 keeps the response simple when you only need to confirm the deletion.
