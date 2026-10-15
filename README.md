@@ -43,6 +43,6 @@ API ROUTES
 | DELETE | `{{baseURL}}/video-games/1` | Delete a video game | Yes |
 
 WHY DOES DELETE RETURN A 204 INSTEAD OF A 200?
-Jasmine Tan: A 204 error, named No Content, is a status code that explicitly states that there is no body/data to return. It informs the user that the request ran successfully, and the reason  why it has no body is because the content was deleted. This response is the best way to inform the user that the data was deleted by delivering no body, in comparison to just delivering a 200, where the user is unaware whether it ran successfully due to ignoring the command or due to successful deletion.
+Jasmine Tan: A 204 No Content status code means that a request was successful, but there is no data/body to return. It tells the user that the request worked without sending any extra information. This is useful to know if the data was successfully deleted because there is no need to return the deleted content. Unlike a 200 OK response, a 204 response does not include a response body, helping to save data by avoiding unnecessary information. It makes it useful when the server only needs to confirm that an operation was successful.
 
 Khurt Reboredo: 
